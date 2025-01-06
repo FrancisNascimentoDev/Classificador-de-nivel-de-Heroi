@@ -70,3 +70,26 @@ h2 {
     border-radius: 5px;
     font-weight: bold;
 }
+
+
+/* Design responsivo para dispositivos móveis */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input[type="number"], button {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
