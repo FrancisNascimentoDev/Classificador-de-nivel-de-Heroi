@@ -7,15 +7,24 @@ function classificarHeroi() {
 
     let nivel = "";
 
-    if (experiencia >= 10000 || habilidade >= 90 || conquistas >= 50) {
-        nivel = "Mestre";
-    } else if (experiencia >= 5000 || habilidade >= 70 || vitorias >= 100) {
-        nivel = "Avançado";
-    } else if (experiencia >= 1000 || habilidade >= 50 || vitorias >= 50) {
-        nivel = "Intermediário";
+    if (experiencia >= 10001 ) {
+      nivel = "Radiante";
+    } else if (experiencia >= 9001 && 10000 ) {
+      nivel = "Imortal";
+    } else if (experiencia >= 8001 && 9000 ) {
+      nivel = "Ascendente";
+    } else if (experiencia >= 7001 && 8000 ) {
+      nivel = "Platina Diamante";
+    } else if (experiencia >= 5001 && 7000 ) {
+      nivel = "Ouro";
+    } else if (experiencia >= 2001 && 5000 ) {
+      nivel = "Prata";
+    } else if (experiencia >=1001 && 2000 ) {
+      nivel = "Bronze";
     } else {
-        nivel = "Novato";
+      nivel = "Ferro";
     }
+    
 
     document.getElementById('resultado').innerText = `O nível do herói é: ${nivel}`;
 }
@@ -25,9 +34,9 @@ function preencherHeroi(hero) {
     const herois = {
         "Aragon": { xp: 12000, habilidade: 95, conquistas: 60, vitorias: 150 },
         "Xena": { xp: 4500, habilidade: 80, conquistas: 30, vitorias: 120 },
-        "Thor": { xp: 6000, habilidade: 85, conquistas: 40, vitorias: 90 },
-        "Mulher-Maravilha": { xp: 2000, habilidade: 65, conquistas: 15, vitorias: 45 },
-        "Flash": { xp: 800, habilidade: 50, conquistas: 10, vitorias: 20 }
+        "Thor": { xp: 6000, habilidade: 53, conquistas: 40, vitorias: 90 },
+        "Mulher-Maravilha": { xp: 8000, habilidade: 65, conquistas: 15, vitorias: 45 },
+        "Flash": { xp: 800, habilidade: 18, conquistas: 10, vitorias: 19 }
     };
 
     const heroData = herois[hero];
