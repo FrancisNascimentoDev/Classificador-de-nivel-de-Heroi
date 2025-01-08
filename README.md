@@ -1,12 +1,12 @@
 # Classificador de Nível de Herói
 
-Este é um sistema que permite classificar o nível de um herói com base em três atributos principais: **Experiência (XP)**, **Habilidade** e **Vitórias em Batalhas**. O usuário pode inserir esses dados manualmente ou escolher entre um conjunto de heróis de exemplo. O sistema calcula o nível do herói com base nos valores inseridos e exibe uma classificação: **Novato**, **Intermediário**, **Avançado** ou **Mestre**.
+Este é um sistema que permite classificar o nível de um herói com base em três atributos principais: **Experiência (XP)**, **Habilidade** e **Vitórias em Batalhas**. O usuário pode inserir esses dados manualmente ou escolher entre um conjunto de heróis de exemplo. O sistema calcula o nível do herói com base nos valores inseridos e exibe uma classificação: **Ferro**, **Bronze**, **Prata**, **Ouro**,**Platina Diamente**,**Ascendente**, **Imortal** ou **Radiante**.
 
 ## Funcionalidades
 
 - **Entrada de dados do herói:** O usuário pode inserir a experiência (XP), habilidade, conquistas e vitórias em batalhas de um herói.
 - **Botões de heróis de exemplo:** O sistema oferece cinco heróis prontos para teste (Aragon, Xena, Thor, Mulher-Maravilha e Flash) com dados predefinidos.
-- **Classificação de nível:** Com base nos dados inseridos ou selecionados, o sistema calcula o nível do herói (Novato, Intermediário, Avançado ou Mestre).
+- **Classificação de nível:** Com base nos dados inseridos ou selecionados, o sistema calcula o nível do herói (Ferro, Bronze, Prata, Ouro, Platina Diamente, Ascendente, Imortal ou Radiante).
 
 ## Como Usar
 
@@ -18,7 +18,7 @@ Este é um sistema que permite classificar o nível de um herói com base em tr�
    - Clique no botão de qualquer herói na seção "Escolha um herói" para preencher automaticamente os campos com os dados do herói selecionado.
 
 3. **Ver o resultado:**
-   - Após inserir os dados ou selecionar um herói de exemplo, o sistema exibirá o nível do herói, como **Novato**, **Intermediário**, **Avançado** ou **Mestre**.
+   - Após inserir os dados ou selecionar um herói de exemplo, o sistema exibirá o nível do herói, como **Ferro**, **Bronze**, **Prata**, **Ouro**,**Platina Diamente**,**Ascendente**, **Imortal** ou **Radiante**.
 
 ## Estrutura do Projeto
 
@@ -46,10 +46,14 @@ Este é um sistema que permite classificar o nível de um herói com base em tr�
 
 O sistema classifica o nível do herói com base nas seguintes condições:
 
-- **Mestre:** Se a experiência (XP) for maior ou igual a 10.000, ou se a habilidade for maior ou igual a 90, ou se o número de conquistas for maior ou igual a 50.
-- **Avançado:** Se a experiência (XP) for maior ou igual a 5.000, ou se a habilidade for maior ou igual a 70, ou se o número de vitórias for maior ou igual a 100.
-- **Intermediário:** Se a experiência (XP) for maior ou igual a 1.000, ou se a habilidade for maior ou igual a 50, ou se o número de vitórias for maior ou igual a 50.
-- **Novato:** Caso contrário.
+- **Radiante** Se a experiência (XP) for maior a 10.001.
+- **Imortal:** Se a experiência (XP) for entre 9001 e 10000.
+- **Ascendente:** Se a experiência (XP) for entre 8001 e 9000.
+- **"Platina Diamante:** Se a experiência (XP) for entre 7001 e 8000.
+- **Ouro:** Se a experiência (XP) for entre 5001 e 7000.
+- **Prata:** Se a experiência (XP) for entre 2001 e 5000.
+- **Bronze:** Se a experiência (XP) for entre 1001 e 2000.
+- **Ferro:** Caso contrário.
 
 ## Exemplos de Heróis
 
@@ -60,35 +64,35 @@ O sistema inclui os seguintes heróis de exemplo:
    - Habilidade: 95
    - Conquistas: 60
    - Vitórias em Batalhas: 150
-   - Nível: **Mestre**
+   - Nível: **Radiante**
 
 2. **Xena**
    - XP: 4.500
    - Habilidade: 80
    - Conquistas: 30
    - Vitórias em Batalhas: 120
-   - Nível: **Avançado**
+   - Nível: **Prata**
 
 3. **Thor**
    - XP: 6.000
    - Habilidade: 85
    - Conquistas: 40
    - Vitórias em Batalhas: 90
-   - Nível: **Avançado**
+   - Nível: **Ouro**
 
 4. **Mulher-Maravilha**
-   - XP: 2.000
+   - XP: 8.000
    - Habilidade: 65
    - Conquistas: 15
    - Vitórias em Batalhas: 45
-   - Nível: **Intermediário**
+   - Nível: **Platina Diamante**
 
 5. **Flash**
    - XP: 800
-   - Habilidade: 50
+   - Habilidade: 80
    - Conquistas: 10
-   - Vitórias em Batalhas: 20
-   - Nível: **Novato**
+   - Vitórias em Batalhas: 19
+   - Nível: **Ferro**
 
 ## Responsividade
 
