@@ -1,6 +1,6 @@
 # Classificador de Nível de Herói
 
-Este é um sistema que permite classificar o nível de um herói com base em três atributos principais: **Experiência (XP)**, **Habilidade** e **Vitórias em Batalhas**. O usuário pode inserir esses dados manualmente ou escolher entre um conjunto de heróis de exemplo. O sistema calcula o nível do herói com base nos valores inseridos e exibe uma classificação: **Ferro**, **Bronze**, **Prata**, **Ouro**,**Platina Diamente**,**Ascendente**, **Imortal** ou **Radiante**.
+Este é um sistema que permite classificar o nível de um herói com base em três atributos principais: **Experiência (XP)**, **Habilidade** e **Vitórias em Batalhas**. O usuário pode inserir esses dados manualmente ou escolher entre um conjunto de heróis de exemplo. O sistema calcula o nível do herói com base nos valores inseridos e exibe uma classificação: **Ferro**, **Bronze**, **Prata**, **Ouro**, **Platina Diamente**,**Ascendente**, **Imortal** ou **Radiante**.
 
 ## Funcionalidades
 
@@ -49,7 +49,7 @@ O sistema classifica o nível do herói com base nas seguintes condições:
 - **Radiante** Se a experiência (XP) for maior a 10.001.
 - **Imortal:** Se a experiência (XP) for entre 9001 e 10000.
 - **Ascendente:** Se a experiência (XP) for entre 8001 e 9000.
-- **"Platina Diamante:** Se a experiência (XP) for entre 7001 e 8000.
+- **Platina Diamante:** Se a experiência (XP) for entre 7001 e 8000.
 - **Ouro:** Se a experiência (XP) for entre 5001 e 7000.
 - **Prata:** Se a experiência (XP) for entre 2001 e 5000.
 - **Bronze:** Se a experiência (XP) for entre 1001 e 2000.
